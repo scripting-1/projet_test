@@ -33,11 +33,11 @@ i{
 header {
 
 display: flex;
-background-image: url(../Image/header\ test.PNG);
+background-image: url(../Image/header/test.PNG);
 }
 
 body {
-    background-image: url(../Image/middle\ test.PNG);
+    background-image: url(../Image/middle/test.PNG);
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
