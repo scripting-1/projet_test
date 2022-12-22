@@ -1,0 +1,337 @@
+@font-face {
+  font-family: 'Bungee Shade';
+    src: url(../webfonts/BungeeShade-Regular.ttf);
+}
+
+html, body {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+p{
+  color: white;
+    font-size: large;
+    font-family:"consolas";
+    margin-bottom: 0;
+    padding: 1rem;
+
+}
+
+a {
+    color: aliceblue;
+    text-decoration:none;
+
+}
+
+i{
+    --fa-animation-duration: 2s;
+    padding: 25px
+    ;
+}
+
+header {
+
+display: flex;
+background-image: url(../Image/header\ test.PNG);
+}
+
+body {
+    background-image: url(../Image/middle\ test.PNG);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer {
+    background-image: url(../Image/footer2.PNG);
+
+}
+
+.techno{
+height: 700px;
+display: flex;
+justify-content: space-around;
+align-content: baseline;
+align-items: end;
+}
+
+.reseaux {    
+justify-self: end;
+
+}
+
+.avatar{
+border-radius: 50%;
+width: 200px;
+}
+
+
+.bgfooterheader {
+    background-size: cover;
+}
+
+
+.content {
+width: 100%;
+display: flex;
+justify-content: space-around;
+padding: 5rem;
+}
+
+
+h1 {
+    font-family: 'Bungee Shade';
+    margin-left: 16rem;
+    padding: 1rem 0 1rem 2rem;
+    font-size: 4rem;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(
+      35deg,
+      var(--color-primary),
+      var(--color-secondary)
+    );
+animation-duration: 1s;
+animation-name: slidein;
+
+}
+
+h2 {
+    font-family: 'Bungee Shade';
+    margin-left: 8rem;
+    padding: 1rem 0 1rem 2rem;
+    font-size: 3rem;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(
+      35deg,
+      var(--color-primary),
+      var(--color-secondary)
+    );
+animation-duration: 1s;
+animation-name: slidein2;
+
+}
+
+h3 {
+    text-align: center;
+    padding: 5rem;
+    font-family: "consolas";
+  
+}
+
+h3:hover {
+  transform: skew(-10deg);
+}
+
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+    
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+
+  }
+}
+
+@keyframes slidein2 {
+    from {
+        margin-left: -100%;
+        width: 100%;
+      }
+    
+      to {
+        margin-left: 0%;
+        width: 300%;
+        
+      }
+} 
+
+.logofooter {
+width: 150px;
+height: 150px;
+}
+
+
+.carouseltest {
+display: flex;
+justify-content: center;
+margin-bottom: 3rem;
+}
+
+.colonne {
+    display: flex;
+    padding: 5rem;
+
+}
+
+:root {
+    --color-primary: hsl(310, 100%, 65%);
+    --color-secondary: hsl(160, 100%, 65%);
+    --background: hsl(230, 30%, 15%);
+    --text: hsl(310, 100%, 95%);
+  }
+  
+  ::selection {
+    background-color: var(--color-primary);
+    color: var(--background);
+    -webkit-text-fill-color: var(--background);
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  
+  section {
+    margin-left: 0;
+    padding: 5rem;
+    font-size: 2rem;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(
+      35deg,
+      var(--color-primary),
+      var(--color-secondary)
+    );
+    }
+
+
+.par2{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 5rem;
+  }
+
+.pad {
+    display: flex;
+    padding: 1rem 0 1rem 2rem;
+    font-size: 2rem;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(
+      35deg,
+      var(--color-primary),
+      var(--color-secondary)
+    );
+
+}
+
+
+.angle {
+    border-radius: 5%;
+    width: 800px;
+    height: 600px;
+}
+
+.copyright {
+display: flex;
+justify-content: center;
+padding: 80px;
+}
+
+
+
+
+
+
+
+
+/*Partie Responsive*/
+
+@media screen and (max-width: 2100px) {
+.par2 {
+  flex-direction: column-reverse;
+  justify-content: center;
+}
+.responsive {
+  display: flex;
+  justify-content: center;
+}
+.angle {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+}
+
+@media screen and (max-width: 810px) {
+  header {
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+  section {
+    padding: 0;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+  }
+  h1 {
+    margin: 0;
+    animation: none;
+    padding: 0;
+    text-align: center;
+  }
+  h2 {
+    animation: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: xx-large;
+  }
+  .techno {
+    flex-direction: column;
+    align-items: center;
+  }
+  img {
+    padding: 2rem;
+  }
+.par2 {
+  padding: 1rem;
+}
+
+.colonne {
+  flex-direction: column;
+  align-items: center;
+}
+
+.reseaux {
+  align-items: center;
+  display: flex;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
